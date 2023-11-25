@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DD94C1A-7BF1-46C6-A4E4-3628877D72A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjekAkhir</RootNamespace>
+    <AssemblyName>ProjekAkhir</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Absen.cs">
+      <DependentUpon>Absen.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Absen.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Absen.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2Cabang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2Cabang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportUntukBoss.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportUntukBoss.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportUntukBoss2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportUntukBoss2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="finalprojectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalprojectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalprojectDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalprojectDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalprojectDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalprojectDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalprojectDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalprojectDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalprojectDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalprojectDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="finalprojectDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>finalprojectDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrystalManajer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrystalManajer.Designer.cs">
+      <DependentUpon>FormCrystalManajer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrystalManajer2Cabang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrystalManajer2Cabang.Designer.cs">
+      <DependentUpon>FormCrystalManajer2Cabang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditCabang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditCabang.Designer.cs">
+      <DependentUpon>FormEditCabang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKhususBossdanHRD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKhususBossdanHRD.Designer.cs">
+      <DependentUpon>FormKhususBossdanHRD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKhususManajer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKhususManajer.Designer.cs">
+      <DependentUpon>FormKhususManajer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gaji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gaji.Designer.cs">
+      <DependentUpon>Gaji.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logout.Designer.cs">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet.cs">
+      <DependentUpon>UASDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UASDataSet81.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UASDataSet81.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="visprogDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>visprogDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Write.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Write.Designer.cs">
+      <DependentUpon>Write.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2Cabang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2Cabang.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportUntukBoss.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportUntukBoss.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportUntukBoss2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportUntukBoss2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrystalManajer.resx">
+      <DependentUpon>FormCrystalManajer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrystalManajer2Cabang.resx">
+      <DependentUpon>FormCrystalManajer2Cabang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditCabang.resx">
+      <DependentUpon>FormEditCabang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKhususBossdanHRD.resx">
+      <DependentUpon>FormKhususBossdanHRD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKhususManajer.resx">
+      <DependentUpon>FormKhususManajer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gaji.resx">
+      <DependentUpon>Gaji.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logout.resx">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Write.resx">
+      <DependentUpon>Write.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Absen.xsc">
+      <DependentUpon>Absen.xsd</DependentUpon>
+    </None>
+    <None Include="Absen.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Absen.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Absen.xss">
+      <DependentUpon>Absen.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet.xsc">
+      <DependentUpon>finalprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalprojectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalprojectDataSet.xss">
+      <DependentUpon>finalprojectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet1.xsc">
+      <DependentUpon>finalprojectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalprojectDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalprojectDataSet1.xss">
+      <DependentUpon>finalprojectDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet2.xsc">
+      <DependentUpon>finalprojectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalprojectDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalprojectDataSet2.xss">
+      <DependentUpon>finalprojectDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet3.xsc">
+      <DependentUpon>finalprojectDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalprojectDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalprojectDataSet3.xss">
+      <DependentUpon>finalprojectDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet4.xsc">
+      <DependentUpon>finalprojectDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalprojectDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalprojectDataSet4.xss">
+      <DependentUpon>finalprojectDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet5.xsc">
+      <DependentUpon>finalprojectDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="finalprojectDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>finalprojectDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="finalprojectDataSet5.xss">
+      <DependentUpon>finalprojectDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UASDataSet.xsc">
+      <DependentUpon>UASDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet.xss">
+      <DependentUpon>UASDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet1.xsc">
+      <DependentUpon>UASDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet1.xss">
+      <DependentUpon>UASDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet2.xsc">
+      <DependentUpon>UASDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet2.xss">
+      <DependentUpon>UASDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet3.xsc">
+      <DependentUpon>UASDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet3.xss">
+      <DependentUpon>UASDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet4.xsc">
+      <DependentUpon>UASDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet4.xss">
+      <DependentUpon>UASDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet5.xsc">
+      <DependentUpon>UASDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet5.xss">
+      <DependentUpon>UASDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet6.xsc">
+      <DependentUpon>UASDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet6.xss">
+      <DependentUpon>UASDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet7.xsc">
+      <DependentUpon>UASDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet7.xss">
+      <DependentUpon>UASDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet81.xsc">
+      <DependentUpon>UASDataSet81.xsd</DependentUpon>
+    </None>
+    <None Include="UASDataSet81.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UASDataSet81.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UASDataSet81.xss">
+      <DependentUpon>UASDataSet81.xsd</DependentUpon>
+    </None>
+    <None Include="visprogDataSet.xsc">
+      <DependentUpon>visprogDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="visprogDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>visprogDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="visprogDataSet.xss">
+      <DependentUpon>visprogDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
